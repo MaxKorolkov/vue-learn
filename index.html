@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Vue-learn</title>
@@ -9,10 +9,12 @@
 <body>
 
 <div id="vue-app">
-    <h1>{{ greet('morning') }}</h1>
-    <a v-bind:href="website">Max site</a>
-    <p v-html="websiteTag"></p>
-    <p><input type="text" v-bind:value="name"></p>
+    <h1>Computed properties</h1>
+    <p>Мой возраст {{age}}</p>
+    <button v-on:click="age++">Click Click</button>
+    <p>Мой возраст {{test2}}</p>
+    <button v-on:click="test2++">Click Click</button>
+    <p>Test property: {{testMethod}} </p>
 </div>
 
 <script src="app.js"></script>
